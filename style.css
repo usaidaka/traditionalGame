@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100vw;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -27,7 +31,7 @@ nav {
   grid-template-areas: "logo wrap wrap wrap wrap";
   height: 90px;
   padding: 5px;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   z-index: 100;
@@ -41,7 +45,7 @@ nav {
 }
 
 .nav-wrap {
-  width: 100%;
+  width: 100vw;
   display: flex;
   grid-area: wrap;
   justify-content: space-between;
@@ -55,13 +59,13 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   grid-area: menu;
 }
 
 .auth {
   display: flex;
-  width: 100%;
+  width: 100vw;
   grid-area: auth;
   justify-content: end;
   padding-right: 5rem;
@@ -81,7 +85,7 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("../assets/bg-screen-1.png");
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 960px;
   display: flex;
   flex-direction: column;
@@ -93,7 +97,7 @@ nav {
 
 .hero::after {
   content: "";
-  width: 100%;
+  width: 100vw;
   top: 0;
   height: 960px;
   position: absolute;
@@ -182,7 +186,7 @@ nav {
 /* article (screen 2) -THE GAME */
 .the-game {
   height: 987px;
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-areas: "word word  word picture picture picture";
   background-image: url("../assets/bg-screen-2.png");
@@ -193,7 +197,7 @@ nav {
 
 .the-game::after {
   content: "";
-  width: 100%;
+  width: 100vw;
   top: 0;
   height: 100%;
   position: absolute;
@@ -243,7 +247,7 @@ nav {
 .the-game .image-wrapper .carousel-wrapper {
   position: absolute;
   bottom: 20px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,19 +271,19 @@ nav {
 /* article (screen 3) -FEATURE */
 .feature {
   height: 987px;
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-areas: "picture picture picture picture picture picture picture picture word";
   background-image: url("../assets/bg-screen-3.png");
   background-size: cover;
   height: 960px;
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 
 .feature::after {
   content: "";
-  width: 100%;
+  width: 100vw;
   top: 0;
   height: 100%;
   position: absolute;
@@ -299,7 +303,7 @@ nav {
   z-index: 10;
   position: relative;
   color: white;
-  width: 100%;
+  width: 100vw;
   margin-top: 200px;
 }
 
@@ -414,7 +418,7 @@ nav {
 /* article (screen 4) -SYSTEM */
 .system {
   height: 987px;
-  width: 100%;
+  width: 100vw;
   background-image: url("../assets/bg-screen-4.png");
   background-size: cover;
   height: 960px;
@@ -423,7 +427,7 @@ nav {
 
 .system::after {
   content: "";
-  width: 100%;
+  width: 100vw;
   top: 0;
   height: 100%;
   position: absolute;
@@ -488,7 +492,7 @@ nav {
 
 .system .content-container .content-wrapper .detail-wrapper .table-system {
   position: absolute;
-  width: 100%;
+  width: 100vw;
 }
 
 .system .content-container .content-wrapper .detail-wrapper .detail-system {
@@ -522,7 +526,7 @@ nav {
 .score {
   background-color: black;
   height: 987px;
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-areas: "title card";
   background-image: url("../assets/bg-screen-5.png");
@@ -534,7 +538,7 @@ nav {
 
 .score::after {
   content: "";
-  width: 100%;
+  width: 100vw;
   top: 0;
   height: 100%;
   position: absolute;
@@ -690,7 +694,7 @@ nav {
 }
 /* article (screen 6) -SUBSCRIBE */
 .subscribe {
-  width: 100%;
+  width: 100vw;
   height: 960px;
   flex-shrink: 0;
   display: grid;
@@ -715,7 +719,7 @@ nav {
 .subscribe .subscribe-picture .picture::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: radial-gradient(
     ellipse at center,
@@ -837,7 +841,7 @@ nav {
 
 /* FOOTER */
 footer {
-  width: 100%;
+  width: 100vw;
   height: 233px;
   flex-shrink: 0;
   background-color: black;
