@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+nav.nav-mobile {
+  display: none;
+}
+
 /* NAVBAR */
 nav {
   display: grid;
@@ -111,7 +115,14 @@ nav {
 .hero h3 {
   margin-top: 24px;
   font-weight: 400;
-  line-height: 27.6px;
+  color: white;
+  z-index: 10;
+  color: #fff;
+  font-family: Arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   letter-spacing: 2px;
 }
 
@@ -176,8 +187,7 @@ nav {
   grid-template-areas: "word word  word picture picture picture";
   background-image: url("../assets/bg-screen-2.png");
   background-size: cover;
-  width: 100%;
-  height: 960px;
+
   position: relative;
 }
 
@@ -487,7 +497,6 @@ nav {
   width: 573px;
   height: 400px;
   padding: 0px 0px 20px 10px;
-  /* background-color: red; */
 }
 
 .system .content-container .content-wrapper .detail-wrapper .detail-system h4 {
@@ -604,10 +613,6 @@ nav {
 
 .score-card-container .card-odd {
   padding-left: 150px;
-}
-
-.score-card-container:nth-child(odd) {
-  align-items: center;
 }
 
 .score-card-container .score-card {
@@ -882,4 +887,81 @@ footer .credit {
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+}
+
+/* RESET MOBILE SIZE */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: white;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: rgba(255, 255, 255);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+.active {
+  left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  background-color: #f5f5f5;
 }
