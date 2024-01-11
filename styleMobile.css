@@ -251,6 +251,13 @@
     padding: 0px 20px;
   }
 
+  .subscribe .subscribe-picture .picture img {
+    margin: auto;
+    margin-top: 200px;
+    width: 70%;
+    height: 70%;
+  }
+
   .subscribe .word-container .word-ask h4 {
     font-size: 20px;
     width: 200.565px;
