@@ -1,6 +1,10 @@
 @media only screen and (max-width: 1245px) {
+  html {
+    width: fit-content;
+  }
+
   body {
-    background-color: #090a0b;
+    /* background-color: #090a0b; */
     width: 100%;
   }
 
@@ -26,7 +30,8 @@
 
   /* SCREEN 1 */
   .hero {
-    background-position: 30% 50px;
+    background-position: 30% 0px;
+    background-repeat: no-repeat;
   }
   .hero h1 {
     font-size: 20px;
@@ -49,7 +54,8 @@
     grid-template-areas:
       "word"
       "picture";
-    display: inline;
+    display: flex;
+    flex-direction: column;
   }
 
   .the-game .word-wrapper {
@@ -85,7 +91,7 @@
 
   .feature {
     height: 687px;
-    background-position: 27% 30px;
+    background-position: 27% 0px;
   }
 
   .feature::after {
@@ -190,7 +196,7 @@
   .score-card-container .score-card {
     width: 352.59px;
     padding: 20px;
-    margin: 20px 20px 0px 20px;
+    margin: 20px 0px 0px 20px;
   }
 
   .score .score-title .score-title-card {
